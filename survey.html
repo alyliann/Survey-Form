@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="" en">
+
+<head>
+    <link rel="stylesheet" href="survey_style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+
+    <title>
+        TIQC Survey Form
+    </title>
+
+</head>
+
+<body>
+    <div class="main">
+        <div id="heading">
+            <img id="logo" alt="Tech Incubator at Queens College white logo with transparent background."
+                src="https://lh3.googleusercontent.com/xCYTpzPJlqwULDQzhapirVmC08F4mZbgEK3ZUzECwvtppSQvg3NxBqv8P6SLi7cYXQz7fEsTDdWwhnwY68kY2D5IJUqQZD7om2CI9RbDcSaN_aGiB5AgQL0u_0kRbguEXZplz2Pk_Q=w2400">
+            <h1 id="title">TIQC Post-Internship Survey Form</h1>
+            <p id="credits">Created by Alysa Vega</p>
+            <p id="description">
+                Please take the time to answer a couple questions regarding your experience interning for the Tech
+                Incubator
+                at
+                Queens College.
+            </p>
+        </div>
+
+        <form class="content"> <!--create form-->
+            <div>
+                <label for="name">
+                    Name <!--label for name input-->
+                </label>
+                <input type="text" id="name" placeholder="Enter your name" required> <!--textbox to input name-->
+            </div>
+            <div>
+                <label for="email">
+                    Email (optional)
+                </label>
+                <input type="email" id="email" placeholder="Enter your email"> <!--textbox to input email-->
+            </div>
+            <div>
+                <label for="age">
+                    Age
+                </label>
+                <input type="number" min="15" max="60" id="age" placeholder="Enter your age" required>
+                <!--textbox to input number-->
+            </div>
+            <br>
+            <div>
+                <label for="role">
+                    Which option best describes you?
+                </label>
+                <select name="role" id="role" required> <!--dropdown of selections-->
+                    <option value="" disabled selected>Select...</option>
+                    <option value="student" required>Student</option>
+                    <option value="intern">Intern</option>
+                    <option value="professional">Professional</option>
+                    <option value="professional">Unemployed</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <fieldset id="first-fieldset">
+                <legend id="first-legend">
+                    Are you currently a TIQC intern?
+                </legend>
+                <br>
+                <label for="intern-1">
+                    <input type="radio" id="intern-1" name="intern" required>
+                    Yes
+                </label>
+                <br>
+                <label for="intern-2">
+                    <input type="radio" id="intern-2" name="intern">
+                    No, I was in the past
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Answer yes or no to the following questions regarding your internship experience:
+                </legend>
+                <table id="yes-no-table">
+                    <tr>
+                        <td>Was your internship experience as expected?</td>
+                        <td>
+                            <label for="experience-1">
+                                <input type="radio" id="experience-1" name="experience" required>
+                                Yes
+                            </label>
+                            <label for="experience-2">
+                                <input type="radio" id="experience-2" name="experience">
+                                No
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Did you recieve sufficient training to do your job effectively?</td>
+                        <td>
+                            <label for="training-1">
+                                <input type="radio" id="training-1" name="training" required>
+                                Yes
+                            </label>
+                            <label for="training-2">
+                                <input type="radio" id="training-2" name="training">
+                                No
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Did you recieve regular feedback on your performance?</td>
+                        <td>
+                            <label for="feedback-1">
+                                <input type="radio" id="feedback-1" name="feedback" required>
+                                Yes
+                            </label>
+                            <label for="feedback-2">
+                                <input type="radio" id="feedback-2" name="feedback">
+                                No
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Would you consider working for TIQC in the future?</td>
+                        <td>
+                            <label for="career-1">
+                                <input type="radio" id="career-1" name="career" required>
+                                Yes
+                            </label>
+                            <label for="career-2">
+                                <input type="radio" id="career-2" name="career">
+                                No
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Would you recommend TIQC's Internship Program to others?</td>
+                        <td>
+                            <label for="recommend-1">
+                                <input type="radio" id="recommend-1" name="recommend" required>
+                                Yes
+                            </label>
+                            <label for="recommend-2">
+                                <input type="radio" id="recommend-2" name="recommend">
+                                No
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <div>
+                <p id="prompt">
+                    Rate your experience interning for TIQC on a scale from 1-5, with 5 indicating that you strongly
+                    agree
+                    and 1 indicating you strongly disagree.
+                </p>
+                <table id="range-table">
+                    <tr id="range-tr">
+                        <td>Interning for TIQC has helped me to develop technical skills.</td>
+                        <td>
+                            <input type="range" min="1" max="5" id="develop-skills" name="develop-skills" required>
+                            <ul class="range-labels">
+                                <li>1</li>
+                                <li>2</li>
+                                <li class="selected">3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Interning for TIQC has helped me to improve my professional communication skills.</td>
+                        <td>
+                            <input type="range" min="1" max="5" id="communication-skills" name="communication-skills"
+                                required>
+                            <ul class="range-labels">
+                                <li>1</li>
+                                <li>2</li>
+                                <li class="selected">3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>After completing my internship, I understand more about website development.</td>
+                        <td>
+                            <input type="range" min="1" max="5" id="web-development" name="web-development" required>
+                            <ul class="range-labels">
+                                <li>1</li>
+                                <li>2</li>
+                                <li class="selected">3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>After completing my internship, I understand more about application development.</td>
+                        <td>
+                            <input type="range" min="1" max="5" id="app-development" name="app-development" required>
+                            <ul class="range-labels">
+                                <li>1</li>
+                                <li>2</li>
+                                <li class="selected">3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>I anticipate career advancement as a result of completing the TIQC internship.</td>
+                        <td>
+                            <input type="range" min="1" max="5" id="career" name="career" required>
+                            <ul class="range-labels">
+                                <li>1</li>
+                                <li>2</li>
+                                <li class="selected">3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <p id="prompt">
+                    Provide a brief answer (1-2 sentences) for the following questions:
+                </p>
+                <div id="comment">
+                    <label for="learn">
+                        What are some things you learned during your internship with TIQC?
+                    </label>
+                    <br>
+                    <textarea name="learn" id="learn" placeholder="Enter your comment here..." maxlength="500"
+                        required></textarea>
+                </div>
+                <br>
+                <div id="comment">
+                    <label for="skills">
+                        What did you enjoy the most about your internship with TIQC?
+                    </label>
+                    <br>
+                    <textarea name="skills" id="skills" placeholder="Enter your comment here..." maxlength="500"
+                        required></textarea>
+                </div>
+                <br>
+                <div id="comment">
+                    <label for="skills">
+                        What did you enjoy the least about your internship with TIQC?
+                    </label>
+                    <br>
+                    <textarea name="skills" id="skills" placeholder="Enter your comment here..." maxlength="500"
+                        required></textarea>
+                </div>
+                <br>
+                <div id="comment">
+                    <label for="improve">
+                        Tell us about your favorite project(s) you worked on during your internship.
+                    </label>
+                    <br>
+                    <textarea name="improve" id="improve" placeholder="Enter your comment here..." maxlength="500"
+                        required></textarea>
+                </div>
+                <br>
+                <div id="comment">
+                    <label for="improve">
+                        Was there anything about your experience that could be improved?
+                    </label>
+                    <br>
+                    <textarea name="improve" id="improve" placeholder="Enter your comment here..." maxlength="500"
+                        required></textarea>
+                </div>
+            </div>
+            <div id="buttons">
+                <button type="reset" value="reset" id="reset">
+                    Reset
+                </button>
+                <button type="submit" value="submit" id="submit">
+                    Submit Form
+                </button>
+            </div>
+            <hr>
+            <div id="footer">
+                <img id="footer-logo" alt="Tech Incubator at Queens College white logo with transparent background."
+                    src="https://lh3.googleusercontent.com/xCYTpzPJlqwULDQzhapirVmC08F4mZbgEK3ZUzECwvtppSQvg3NxBqv8P6SLi7cYXQz7fEsTDdWwhnwY68kY2D5IJUqQZD7om2CI9RbDcSaN_aGiB5AgQL0u_0kRbguEXZplz2Pk_Q=w2400">
+                <div id="footer-text">
+                    <p id="footer-TIQC">
+                        Tech Incubator @ Queens College <br>
+                    </p>
+                    <p id="footer-address">
+                        65-30 Kissena Blvd. CEP Hall 2 <br>
+                        Queens, NY 11367 <br> <br>
+                        718-570-0644
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

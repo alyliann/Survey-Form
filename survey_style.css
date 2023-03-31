@@ -1,0 +1,232 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: .1px;
+    /*background-image: ;*/
+}
+
+.main {
+    background-image: url(https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #ffffff;
+    overflow-y: scroll;
+    font-size: 16px
+}
+
+#heading {
+    text-align: center;
+    font-family: 35px;
+    z-index: 2;
+    position: relative;
+}
+
+img {
+    margin-bottom: -30px;
+    max-width: 450px;
+    height: auto;
+}
+
+#credits {
+    color: #9d9d9d;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+#description {
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.content {
+    background-color: rgb(27, 27, 50, .9);
+    max-width: 728px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px -1px 10px 5px rgb(122, 0, 0);
+}
+
+#name,
+#email,
+#age,
+#role,
+#learn,
+#skills,
+#improve {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+label[for=name],
+label[for=email],
+label[for=age],
+label[for=role] {
+    font-size: 18px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+select {
+    font-size: 17.5px!important;
+}
+
+label[for=name],
+label[for=email],
+label[for=age],
+label[for=role],
+label[for=learn],
+label[for=skills],
+label[for=improve] {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+legend {
+    font-weight: 600;
+}
+
+#first-legend {
+    font-size: 18px;
+    margin-bottom: -10px;
+}
+
+input[type=radio],
+fieldset input {
+    height: 20px;
+    width: 20px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+}
+
+#range-table {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-spacing: 0 20px;
+}
+
+input[type=range] {
+    position: relative;
+    width: 150px;
+    height: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 8.2px;
+    display: inline;
+}
+
+#first-fieldset {
+    margin-top: -40px;
+}
+
+fieldset legend {
+    margin-top: 25px;
+}
+
+#prompt {
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+#learn,
+#skills,
+#improve {
+    min-height: 120px;
+}
+
+label[for=learn] {
+    margin-top: 35px
+}
+
+#comment {
+    margin-top: -20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+textarea {
+    font-size: 15px !important;
+}
+
+#buttons {
+    text-align: center;
+}
+
+button {
+    margin-top: -10px;
+    display: inline-block;
+    width: 45%;
+    padding: 0.75rem;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#reset {
+    background: rgb(255, 97, 97);
+}
+
+#submit {
+    background: #37af65;
+}
+
+hr {
+    margin-top: 30px;
+    width: 90%;
+    color: rgb(165, 165, 165);
+}
+
+#footer {
+    display: inline;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+#footer-logo {
+    float: left;
+    max-width: 400px;
+    margin-right: -10px;
+    padding-top: 10px;
+}
+
+#footer-text {
+    text-align: left;
+    font-size: 15px;
+    padding: 7px 0;
+}
+
+#footer-TIQC {
+    font-weight: 600;
+}
